@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:contentDescription="@null"/>
+            <TextView
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_section"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:background="@color/colorAccent"
+            android:clickable="true"
+            android:onClick="editFields"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/email"
+            android:padding="@dimen/default_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:text="@string/sample_email"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="16dp"
+            android:drawableLeft="@android:drawable/stat_sys_vp_phone_call"
+            android:drawablePadding="16dp"
+            android:drawableStart="@android:drawable/stat_sys_vp_phone_call"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:text="21 23456780" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dados acadêmicos"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/course"
+            android:padding="@dimen/default_spacing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:text="Curso: Análise e desenvolvimento de Sistemas"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/discipline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@android:drawable/stat_sys_vp_phone_call"
+            android:drawablePadding="@dimen/activity_horizontal_margin"
+            android:drawableStart="@android:drawable/stat_sys_vp_phone_call"
+            android:gravity="center_vertical"
+            android:padding="@dimen/default_spacing"
+            android:text="Disciplina: Fundamentos de Desenvolvimento Android" />
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

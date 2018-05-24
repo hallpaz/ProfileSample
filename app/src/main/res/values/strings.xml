@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Profile</string>
+    <string name="personal_section">Dados pessoais</string>
+    <string name="sample_email">hallison.paz@prof.infnet.br</string>
+
+    <string-array name="students">
+        <item>---------</item>
+        <item>João Pedro</item>
+        <item>Maria Rita</item>
+        <item>Eduardo Lobo</item>
+        <item>Hallison Paz</item>
+        <item>Cristina Lima</item>
+    </string-array>
+
+</resources>
